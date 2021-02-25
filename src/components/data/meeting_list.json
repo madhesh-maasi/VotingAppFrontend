@@ -1,0 +1,34 @@
+[
+{
+"m_id":1,
+"m_name":"Meeting 1",
+"m_date":"2020-11-22 18:00:00",
+"m_notes":"this is the general meeting for the stakeholders",
+"m_userExist":false,
+"m_questionsExist":false
+},
+{
+"m_id":2,
+"m_name":"Meeting 2",
+"m_date":"2020-11-22 18:00:00",
+"m_notes":"this is the general meeting for the stakeholders",
+"m_userExist":true,
+"m_questionsExist":true
+},
+{
+"m_id":3,
+"m_name":"Meeting 3",
+"m_date":"2020-11-22 18:00:00",
+"m_notes":"this is the general meeting for the stakeholders",
+"m_userExist":true,
+"m_questionsExist":false
+},
+{
+"m_id":4,
+"m_name":"Meeting 4",
+"m_date":"2020-11-22 18:00:00",
+"m_notes":"this is the general meeting for the stakeholders",
+"m_userExist":false,
+"m_questionsExist":true
+}
+]

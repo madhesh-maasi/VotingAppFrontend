@@ -1,0 +1,17 @@
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+li{
+  cursor: pointer;
+}
+
+
+/* When we click the hamburger menu we want to hide the icon */
+.hamburger_img.close {
+    display: none;
+}
+
+/* When we click the menu we want to display this icon */
+.right-menu.open {
+    display: block;
+}

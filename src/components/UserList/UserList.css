@@ -1,0 +1,47 @@
+.h-screen{
+height:110vh;
+}
+.adjust-pos{
+	margin-top:5%;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+table td {
+    word-wrap: break-word;         /* All browsers since IE 5.5+ */
+    overflow-wrap: break-word;     /* Renamed property in CSS3 draft spec */
+}
+.whitespace-no-wrap {
+    white-space: break-spaces;
+}
+
+
+.desktop {display: contents;}
+.mobile {display: none;}
+.uniquelink{width:50%;}
+
+
+@media screen and (max-width: 768px) {
+
+.desktop {display: none;}
+.mobile {display: block;}
+canvas{
+width:330px;
+}
+}
+@media (min-width: 640px) {
+    table {
+      display: inline-table !important;
+    }
+	.mobile_header{
+	display:none;
+	}
+
+    thead tr:not(:first-child) {
+      display: none;
+    }
+  }
+

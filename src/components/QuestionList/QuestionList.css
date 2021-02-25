@@ -1,0 +1,33 @@
+.h-screen{
+height:70vh;
+}
+.adjust-pos{
+	margin-top:5%;
+}
+
+.desktop {display: contents;}
+.mobile {display: none;}
+
+
+@media screen and (max-width: 768px) {
+
+.desktop {display: none;}
+.mobile {display: block;}
+canvas{
+width:330px;
+}
+}
+@media (min-width: 640px) {
+    table {
+      display: inline-table !important;
+    }
+	.mobile_header{
+	display:none;
+	}
+
+    thead tr:not(:first-child) {
+      display: none;
+    }
+  }
+
+ 

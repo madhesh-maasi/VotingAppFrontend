@@ -1,0 +1,23 @@
+{
+
+    "hello.label": "你好",
+    "thankyou.label": "謝謝你",
+    "Header.HomeMenuText":"Hogar",
+    "Header.AboutMenuText":"Acerca de",
+    "Header.InstructionMenuText":"Instruction",
+    "Header.LogoutMenuText":"Instrucción",
+    "Header.LanguageMenuText":"Elige lengua",
+    "LoginPage.HeadingText":"Iniciar sesión en su cuenta",
+    "LoginPage.LoginButtonText":"Registrarse",
+    "MeetingList.FormHeadingText":"Información de la reunión",
+    "MeetingList.AddMeeting":"Agregar reunión",
+    "MeetingList.UploadButton":"Subir",
+    "MeetingList.ViewButton":"Ver",
+    "MeetingList.EditButton":"Editar",
+    "MeetingList.Name":"Nombre",
+    "MeetingList.Time":"Fecha y hora",
+    "MeetingList.Notes":"Notas",
+    "MeetingList.Users":"Usuarios",
+    "MeetingList.Questions":"Preguntas",
+    "MeetingList.Action":"Acción"
+}
