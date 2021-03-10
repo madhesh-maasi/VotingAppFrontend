@@ -1,7 +1,18 @@
-input,textarea {
-padding-left:1%;
+input,
+textarea {
+  padding-left: 1%;
 }
-.error-msg{
-color:red;
-font-size:14px;	
+.error-msg {
+  color: red;
+  font-size: 14px;
+}
+h3 {
+  /* font-size: 1.2rem !important; */
+}
+.customUpload::-webkit-file-upload-button {
+  border: none;
+  background: #fff;
+  border: 2px dashed grey;
+  padding: 2px 20px;
+  cursor: pointer;
 }

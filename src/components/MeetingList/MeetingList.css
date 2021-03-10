@@ -1,34 +1,57 @@
-.h-screen{
-height:70vh;
+.h-screen {
+  height: 70vh;
 }
-.adjust-pos{
-	margin-top:5%;
-}
-
-.desktop {display: contents;}
-.mobile {display: none;}
-
-svg{
-display:initial;
+.adjust-pos {
+  margin-top: 3%;
+  width: 1rem;
+  height: 1rem;
 }
 
+.desktop {
+  display: contents;
+}
+.mobile {
+  display: none;
+}
+
+svg {
+  display: initial;
+}
 
 @media screen and (max-width: 767px) {
-
-.desktop {display: none;}
-.mobile {display: block;}
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
 }
 @media (min-width: 640px) {
-    table {
-      display: inline-table !important;
-    }
-	.mobile_header{
-	display:none;
-	}
-
-    thead tr:not(:first-child) {
-      display: none;
-    }
+  table {
+    display: inline-table !important;
+  }
+  .mobile_header {
+    display: none;
   }
 
- 
+  thead tr:not(:first-child) {
+    display: none;
+  }
+}
+/* Maasi */
+.desktop th {
+  font-size: 16px;
+  color: gray;
+}
+td {
+  font-size: 14px;
+  border: none;
+}
+tr {
+  border-bottom: 1px solid #b9b9b9;
+}
+td button {
+  width: 120px;
+}
+.adjust-pos {
+}

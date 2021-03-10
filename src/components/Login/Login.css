@@ -1,0 +1,26 @@
+.loginillus {
+  background: url(./loginillus.png);
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 640px) {
+  .loginillus {
+    display: none;
+  }
+  .loginpage {
+    background: url(./loginillus.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.log-screen {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 12, 45, 1) 0%,
+    rgba(245, 245, 255, 1) 100%
+  );
+}
