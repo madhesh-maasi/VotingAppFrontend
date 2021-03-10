@@ -338,7 +338,7 @@ function UserQuestionPage(props) {
   const [isLoading, setIsLoading] = useState(true);
   const otpInput = useRef(null);
 
-  // const [seconds, setSeconds] = useState(10); maasi
+  const [seconds, setSeconds] = useState(10);
   const [done, setDone] = useState(false);
   const foo = useRef();
 
@@ -357,19 +357,19 @@ function UserQuestionPage(props) {
   });
 
   const [hubconnection, setConnection] = useState();
-  // const [timeLeftToAnswer, setTimeLeftToAnswer] = useState(60); maasi
+  const [timeLeftToAnswer, setTimeLeftToAnswer] = useState(60);
 
   const alertUser = (e) => {
     e.preventDefault();
     e.returnValue = "";
   };
 
-  // useEffect(() => {
-  //   if (seconds === 0) {
-  //     clearInterval(foo.current);
-  //     setDone(true);
-  //   }
-  // }, [seconds]); maasi
+  useEffect(() => {
+    if (seconds === 0) {
+      clearInterval(foo.current);
+      setDone(true);
+    }
+  }, [seconds]);
 
   useEffect(() => {
     //  GET request using axios inside useEffect React hook
@@ -438,7 +438,7 @@ function UserQuestionPage(props) {
 
           foo.current = setInterval(() => tick(), 1000);
           setDone(false);
-          // setSeconds(60);maasi
+          setSeconds(60);
 
           setShowResult((prevState) => ({
             ...prevState,
@@ -560,7 +560,7 @@ function UserQuestionPage(props) {
   };
 
   function tick() {
-    // setSeconds((prevSeconds) => prevSeconds - 1);maasi
+    setSeconds((prevSeconds) => prevSeconds - 1);
   }
 
   function PollPage() {
@@ -597,7 +597,7 @@ function UserQuestionPage(props) {
         {!isVoteStored && !done && (
           <div className="flex  lg:items-center flex-col linear-bg justify-center h-screen">
             <div className="font-medium text-red-400 mb-5 text-xl">
-              {/* {t("PollPage.TimeToAnswer")}&nbsp;: {seconds}{" "} maasi */}
+              {t("PollPage.TimeToAnswer")}&nbsp;: {seconds}{" "}
               {t("PollPage.Seconds")}&nbsp;
             </div>
             <div className="font-bold sm:container question-cont rounded-lg border shadow-lg p-10">
